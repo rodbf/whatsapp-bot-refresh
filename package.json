@@ -1,0 +1,27 @@
+{
+  "name": "whatsapp-bot-refresh",
+  "version": "1.0.0",
+  "description": "A personal Whatsapp chatbot.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "dev": "node --experimental-loader hot-esm ./index.js",
+    "start": "node --env-file=.env index.js"
+  },
+  "author": "rodbf",
+  "homepage": "https://github.com/rodbf/whatsapp-bot-refresh",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "better-sqlite3": "^11.8.1",
+    "qrcode": "^1.5.4",
+    "whatsapp-web.js": "^1.26.1-alpha.3"
+  },
+  "devDependencies": {
+    "hot-esm": "^1.6.0"
+  }
+}
